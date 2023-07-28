@@ -17,35 +17,47 @@ class Solution(object):
         # check binary length double if one is larger
         # if the same then brute force all permuations
         
-        longest_binary = self.findIndexOfLongestBinary(nums)
-        if longest_binary == -1:
-            return self.maximumOrSearchAll(nums, k)
-
-        for _ in range(0, k):
-            nums[longest_binary] = nums[longest_binary] * 2    
-        return functools.reduce(operator.or_, nums)
+        list_of_candidates = self.findCandidates(nums)
+        print(list_of_candidates)
+        if len(list_of_candidates) == 1:
+            for _ in range(0, k):
+                nums[list_of_candidates[0]] = nums[list_of_candidates[0]] * 2
+            return functools.reduce(operator.or_, nums)    
+        else:
+            return self.maximumOrSearchAll(nums, list_of_candidates, k)
     
 
-    def findIndexOfLongestBinary(self, nums):
-        index = 0
-        has_changed = False
-        for i in range(1, len(nums)):
-            if len(bin(nums[i])) >= len(bin(nums[index])):
-                if has_changed:
-                    return -1
-                has_changed = True
-                index = i
-        return index
+    def findCandidates(self, nums):
+        """Returns a list of indexes corresponding to ints in nums that have the maximum binary sequence length"""
+        candidates = []
+        max_binary_length = max(len(bin(i)) for i in nums)
+        for i in range(0, len(nums)):
+            if len(bin(nums[i])) == max_binary_length:
+                candidates.append(i)
+        return candidates
 
-    def maximumOrSearchAll(nums, k):
-        return 0        
+    def maximumOrSearchAll(self, nums, list_of_candidates, k):
+
+    def generateDoubleNums(self, nums, list_of_candidates, k, doubles=[]):     
+
+        if k == 0:
+            return nums
+        
+        for i in range(0, len(list_of_candidates)):
+            #Double i 
+            doubles.append(nums)
+            #Dont double i
+            dobules.append()
+
+        return doubles
+              
 
 
 solution = Solution()
 print(bin(12))
 print(bin(9))
 nums = [18, 12]
-print(bin(functools.reduce(operator.or_, nums)))
+print((functools.reduce(operator.or_, nums)))
 
 nums = [12,9]
 print (solution.maximumOr(nums, 2))
