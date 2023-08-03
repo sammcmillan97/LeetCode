@@ -37,27 +37,23 @@ class Solution(object):
         return candidates
 
     def maximumOrSearchAll(self, nums, list_of_candidates, k):
+        doubles = self.generateDoubleNums(nums, list_of_candidates, k)
+        return max(functools.reduce(operator.or_, nums) for nums in doubles)
 
-    def generateDoubleNums(self, nums, list_of_candidates, k, doubles=[]):     
-
+    def generateDoubleNums(self, nums, list_of_candidates, k):     
+        doubles = []
         if k == 0:
-            return nums
+            return [nums]
         
-        for i in range(0, len(list_of_candidates)):
-            #Double i 
-            doubles.append(nums)
-            #Dont double i
-            dobules.append()
+        for i in list_of_candidates:
+            copy1 = nums[:]
+            copy1[i] = copy1[i] * 2
+            doubles += self.generateDoubleNums(copy1, list_of_candidates, k-1)
 
         return doubles
               
 
 
 solution = Solution()
-print(bin(12))
-print(bin(9))
-nums = [18, 12]
-print((functools.reduce(operator.or_, nums)))
-
-nums = [12,9]
-print (solution.maximumOr(nums, 2))
+nums = [41,79,82,27,71,62,57,67,34,8,71,2,12,93,52,91,86,81,1,79,64,43,32,94,42,91,9,25]
+print (solution.maximumOr(nums, 10))
