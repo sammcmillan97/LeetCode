@@ -1,0 +1,113 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+    
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "BestTimeToBuyTwoSolution",
+            "request": "launch",
+            "mainClass": "BestTimeToBuyTwoSolution",
+            "projectName": "LeetCode_7f1a99a7"
+        },
+        {
+            "type": "java",
+            "name": "BestTimeToBuy",
+            "request": "launch",
+            "mainClass": "Easy.BestTimeToBuy",
+            "projectName": "LeetCode_7f1a99a7"
+        },
+        {
+            "type": "java",
+            "name": "GreatestCommonDivisorOfStrings",
+            "request": "launch",
+            "mainClass": "Easy.GreatestCommonDivisorOfStrings",
+            "projectName": "LeetCode_7f1a99a7"
+        },
+        {
+            "type": "java",
+            "name": "MajorityElementSolution",
+            "request": "launch",
+            "mainClass": "Easy.MajorityElementSolution",
+            "projectName": "LeetCode_7f1a99a7"
+        },
+        {
+            "type": "java",
+            "name": "MergeAlternatelySolution",
+            "request": "launch",
+            "mainClass": "Easy.MergeAlternatelySolution",
+            "projectName": "LeetCode_7f1a99a7"
+        },
+        {
+            "type": "java",
+            "name": "MergeSortedArraySolution",
+            "request": "launch",
+            "mainClass": "Easy.MergeSortedArraySolution",
+            "projectName": "LeetCode_7f1a99a7"
+        },
+        {
+            "type": "java",
+            "name": "Solution",
+            "request": "launch",
+            "mainClass": "Easy.Solution",
+            "projectName": "LeetCode_7f1a99a7"
+        },
+        {
+            "type": "java",
+            "name": "GasStation",
+            "request": "launch",
+            "mainClass": "GasStation",
+            "projectName": "LeetCode_7f1a99a7"
+        },
+        {
+            "type": "java",
+            "name": "JumpGameTwoSolution",
+            "request": "launch",
+            "mainClass": "JumpGameTwoSolution",
+            "projectName": "LeetCode_7f1a99a7"
+        },
+        {
+            "type": "java",
+            "name": "ProductOfArrayExceptSelf",
+            "request": "launch",
+            "mainClass": "ProductOfArrayExceptSelf",
+            "projectName": "LeetCode_7f1a99a7"
+        },
+        {
+            "type": "java",
+            "name": "RemoveKdigitsSolution",
+            "request": "launch",
+            "mainClass": "RemoveKdigitsSolution",
+            "projectName": "LeetCode_7f1a99a7"
+        },
+        {
+            "type": "java",
+            "name": "RotateArraySolution",
+            "request": "launch",
+            "mainClass": "RotateArraySolution",
+            "projectName": "LeetCode_7f1a99a7"
+        },
+        {
+            "type": "java",
+            "name": "Solution(1)",
+            "request": "launch",
+            "mainClass": "Solution",
+            "projectName": "LeetCode_7f1a99a7"
+        },
+        {
+            "type": "java",
+            "name": "SolutionRemoveDuplicates",
+            "request": "launch",
+            "mainClass": "SolutionRemoveDuplicates",
+            "projectName": "LeetCode_7f1a99a7"
+        }
+    ]
+}
