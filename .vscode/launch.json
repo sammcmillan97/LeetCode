@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ReverseVowelsOfAString",
+            "request": "launch",
+            "mainClass": "Easy.ReverseVowelsOfAString",
+            "projectName": "LeetCode_7f1a99a7"
+        },
+        {
+            "type": "java",
+            "name": "CanPlaceFlowers",
+            "request": "launch",
+            "mainClass": "Easy.CanPlaceFlowers",
+            "projectName": "LeetCode_7f1a99a7"
+        },
+        {
+            "type": "java",
             "name": "KidsWithTheGreatestNumberOfCandies",
             "request": "launch",
             "mainClass": "Easy.KidsWithTheGreatestNumberOfCandies",
