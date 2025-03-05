@@ -7,7 +7,7 @@ public class ReverseWordsInAString {
         int i = charArray.length -1;
         int wordLength = 0;
         int returArrayIndex = 0;
-        while(i > 0) {
+        while(i >= 0) {
             
             while(i >= 0 && !Character.isWhitespace(charArray[i])) {
                 i--;
