@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ReverseWordsInAString",
+            "request": "launch",
+            "mainClass": "ReverseWordsInAString",
+            "projectName": "LeetCode_eb4d9012"
+        },
+        {
+            "type": "java",
             "name": "ReverseVowelsOfAString",
             "request": "launch",
             "mainClass": "Easy.ReverseVowelsOfAString",
