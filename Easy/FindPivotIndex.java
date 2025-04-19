@@ -26,7 +26,4 @@ public class FindPivotIndex {
         int nums[] = {-1,-1,-1,-1,-1,0};
         System.out.println(s.pivotIndex(nums));
     }
-
-
-
 }
