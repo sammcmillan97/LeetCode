@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "DetermineIfTwoStringsAreClose",
+            "request": "launch",
+            "mainClass": "DetermineIfTwoStringsAreClose",
+            "projectName": "LeetCode_7f1a99a7"
+        },
+        {
+            "type": "java",
+            "name": "FindTheDifferenceOfTwoArrays",
+            "request": "launch",
+            "mainClass": "Easy.FindTheDifferenceOfTwoArrays",
+            "projectName": "LeetCode_7f1a99a7"
+        },
+        {
+            "type": "java",
+            "name": "FindPivotIndex",
+            "request": "launch",
+            "mainClass": "Easy.FindPivotIndex",
+            "projectName": "LeetCode_7f1a99a7"
+        },
+        {
+            "type": "java",
             "name": "MaximumAverageSubarray1",
             "request": "launch",
             "mainClass": "Easy.MaximumAverageSubarray1",
