@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "AsteroidCollision",
+            "request": "launch",
+            "mainClass": "AsteroidCollision",
+            "projectName": "LeetCode_eb4d9012"
+        },
+        {
+            "type": "java",
             "name": "DetermineIfTwoStringsAreClose",
             "request": "launch",
             "mainClass": "DetermineIfTwoStringsAreClose",
