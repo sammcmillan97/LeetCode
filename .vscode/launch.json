@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "DecodeString",
+            "request": "launch",
+            "mainClass": "DecodeString",
+            "projectName": "LeetCode_eb4d9012"
+        },
+        {
+            "type": "java",
             "name": "AsteroidCollision",
             "request": "launch",
             "mainClass": "AsteroidCollision",
