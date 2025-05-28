@@ -1,5 +1,5 @@
 package Easy;
-import Util.TreeNode;
+import Models.TreeNode;
 
 public class MaximumDepthOfBinaryTree {
 

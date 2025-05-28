@@ -1,4 +1,4 @@
-package Util;
+package Models;
 
 public class TreeNode {
     

@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "DeleteTheMiddleNodeOfALinkedList",
+            "request": "launch",
+            "mainClass": "DeleteTheMiddleNodeOfALinkedList",
+            "projectName": "LeetCode_7f1a99a7"
+        },
+        {
+            "type": "java",
             "name": "AsteroidCollision",
             "request": "launch",
             "mainClass": "AsteroidCollision",
