@@ -2,27 +2,44 @@ import Models.ListNode;
 
 public class OddEvenLinkedList {
 
-
     public ListNode oddEvenList(ListNode head) {
+        if (head == null) {
+            return null;
+        }
+        if (head.next == null) {
+            return head;
+        }
+        ListNode evenHead = head.next;
+
         ListNode oddNode = head;
         ListNode evenNode = head.next;
+        
         ListNode prevOdd;
         ListNode prevEven;
 
         while(true) {
-            if(oddNode.next.next == null & evenNode.next.next == null) {
-                //both at the end of there lists no further iteration (Even number total)
+            if(oddNode.next.next == null & evenNode.next == null) {
+                //End of list even total
                 break;
+                //End of list odd total
             } else if (evenNode.next.next == null) {
                 prevOdd = oddNode;
                 oddNode = oddNode.next.next;
-                
+                prevOdd.next = oddNode;
+                break;
+            } else {
+                prevOdd = oddNode;
+                oddNode = oddNode.next.next;
+                prevOdd.next = oddNode;
+
+                prevEven = evenNode;
+                evenNode = evenNode.next.next;
+                prevEven.next = evenNode;
             }
-
-            } else if (oddNode) {}
         }
-
-
+        evenNode.next = null;
+        oddNode.next = evenHead;
+        return head;
     }
 
     public static void main(String[] args) {
