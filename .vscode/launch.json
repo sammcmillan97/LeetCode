@@ -6,7 +6,14 @@
     "configurations": [
         {
             "type": "java",
-           "name": "Dota2Senate",
+            "name": "GuessNumberHigherOrLower",
+            "request": "launch",
+            "mainClass": "Easy.GuessNumberHigherOrLower",
+            "projectName": "LeetCode_7f1a99a7"
+        },
+        {
+            "type": "java",
+            "name": "Dota2Senate",
             "request": "launch",
             "mainClass": "Dota2Senate",
             "projectName": "LeetCode_eb4d9012"
