@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "TreeNode",
+            "request": "launch",
+            "mainClass": "Models.TreeNode",
+            "projectName": "LeetCode_eb4d9012"
+        },
+        {
+            "type": "java",
             "name": "GuessNumberHigherOrLower",
             "request": "launch",
             "mainClass": "Easy.GuessNumberHigherOrLower",
