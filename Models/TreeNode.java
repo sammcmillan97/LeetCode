@@ -11,7 +11,7 @@ public class TreeNode {
     
     TreeNode() {}
     
-    TreeNode(int val) { this.val = val; }
+    public TreeNode(int val) { this.val = val; }
     
     TreeNode(int val, TreeNode left, TreeNode right) {
         this.val = val;
@@ -22,10 +22,12 @@ public class TreeNode {
     public List<Integer> GetLeafValueSequence(TreeNode head) {
         List<Integer> leaves = new ArrayList<Integer>();
 
+        //Empty tree
         if (head == null) {
             return leaves;
         }
 
+        //Leaf node
         if (head.left == null && head.right == null) {
             leaves.add(head.val);
             return leaves;
