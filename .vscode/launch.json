@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MaximumLevelSumOfABinaryTree",
+            "request": "launch",
+            "mainClass": "MaximumLevelSumOfABinaryTree",
+            "projectName": "LeetCode_eb4d9012"
+        },
+        {
+            "type": "java",
             "name": "PathSum3",
             "request": "launch",
             "mainClass": "PathSum3",
