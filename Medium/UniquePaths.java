@@ -7,26 +7,46 @@ Given the two integers m and n, return the number of possible unique paths that 
 The test cases are generated so that the answer will be less than or equal to 2 * 109.
         */
 
+import java.util.HashMap;
+import java.util.Map;
+
 class Solution {
-    public int uniquePaths(int m, int n) {
+    // public int uniquePaths(int m, int n) {
 
-        int[][] paths = new int[m][n];
+    //     int[][] paths = new int[m][n];
  
-        for(int i = 0; i < m; i++) {
-            paths[i][0] = 1;
-        }
+    //     for(int i = 0; i < m; i++) {
+    //         paths[i][0] = 1;
+    //     }
 
-        for(int i = 0; i < n; i++) {
-            paths[0][i] = 1;
-        }
-        System.out.println("reached");
+    //     for(int i = 0; i < n; i++) {
+    //         paths[0][i] = 1;
+    //     }
+    //     System.out.println("reached");
 
-        for(int i = 1; i < m; i++) {
-            for(int j = 1; j < n; j++) {
-                paths[i][j] = paths[i - 1][j] + paths[i][j - 1];
-            }
+    //     for(int i = 1; i < m; i++) {
+    //         for(int j = 1; j < n; j++) {
+    //             paths[i][j] = paths[i - 1][j] + paths[i][j - 1];
+    //         }
+    //     }
+    //     return paths[m - 1][n - 1];
+    // }
+
+    public int uniquePaths(int m, int n) {
+        int[][] cache = new int[m][n];
+        return uniquePaths(m, n, 0, 0, cache);
+    }
+
+    public int uniquePaths(int m, int n, int row, int column, int[][] cache) {
+        if (row == m - 1 ||  column == n - 1) {
+            return 1;
         }
-        return paths[m - 1][n - 1];
+        if (cache[row][column] != 0) {
+            return cache[row][column];
+        }
+        int val = uniquePaths(m, n,  row + 1, column, cache) + uniquePaths(m, n, row, column + 1,cache);
+        cache[row][column] = val;
+        return val;
     }
 
     public static void main(String[] args) {

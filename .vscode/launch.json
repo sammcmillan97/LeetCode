@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Solution",
+            "request": "launch",
+            "mainClass": "Solution",
+            "projectName": "LeetCode_7f1a99a7"
+        },
+        {
+            "type": "java",
+            "name": "DominoAndTrominoTiling",
+            "request": "launch",
+            "mainClass": "DominoAndTrominoTiling",
+            "projectName": "LeetCode_7f1a99a7"
+        },
+        {
+            "type": "java",
+            "name": "HouseRobber",
+            "request": "launch",
+            "mainClass": "HouseRobber",
+            "projectName": "LeetCode_7f1a99a7"
+        },
+        {
+            "type": "java",
+            "name": "KokoEatingBannas",
+            "request": "launch",
+            "mainClass": "KokoEatingBannas",
+            "projectName": "LeetCode_7f1a99a7"
+        },
+        {
+            "type": "java",
+            "name": "FindPeakElement",
+            "request": "launch",
+            "mainClass": "FindPeakElement",
+            "projectName": "LeetCode_7f1a99a7"
+        },
+        {
+            "type": "java",
             "name": "NumberOfProvinces",
             "request": "launch",
             "mainClass": "NumberOfProvinces",
