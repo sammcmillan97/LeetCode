@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CountingBits",
+            "request": "launch",
+            "mainClass": "Easy.BitManipulation.CountingBits",
+            "projectName": "LeetCode_7f1a99a7"
+        },
+        {
+            "type": "java",
             "name": "Solution",
             "request": "launch",
             "mainClass": "Solution",
