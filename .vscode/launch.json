@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "StockSpanner",
+            "request": "launch",
+            "mainClass": "StockSpanner",
+            "projectName": "LeetCode_eb4d9012"
+        },
+        {
+            "type": "java",
+            "name": "DailyTemperatures",
+            "request": "launch",
+            "mainClass": "DailyTemperatures",
+            "projectName": "LeetCode_eb4d9012"
+        },
+        {
+            "type": "java",
             "name": "NumberOfProvinces",
             "request": "launch",
             "mainClass": "NumberOfProvinces",
