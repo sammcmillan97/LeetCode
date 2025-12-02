@@ -1,0 +1,92 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "StockSpanner",
+            "request": "launch",
+            "mainClass": "StockSpanner",
+            "projectName": "LeetCode_eb4d9012"
+        },
+        {
+            "type": "java",
+            "name": "DailyTemperatures",
+            "request": "launch",
+            "mainClass": "DailyTemperatures",
+            "projectName": "LeetCode_eb4d9012"
+        },
+        {
+            "type": "java",
+            "name": "NumberOfProvinces",
+            "request": "launch",
+            "mainClass": "NumberOfProvinces",
+            "projectName": "LeetCode_eb4d9012"
+        },
+        {
+            "type": "java",
+            "name": "KeysAndRooms",
+            "request": "launch",
+            "mainClass": "KeysAndRooms",
+            "projectName": "LeetCode_eb4d9012"
+        },
+        {
+            "type": "java",
+            "name": "MaximumLevelSumOfABinaryTree",
+            "request": "launch",
+            "mainClass": "MaximumLevelSumOfABinaryTree",
+            "projectName": "LeetCode_eb4d9012"
+        },
+        {
+            "type": "java",
+            "name": "PathSum3",
+            "request": "launch",
+            "mainClass": "PathSum3",
+            "projectName": "LeetCode_eb4d9012"
+        },
+        {
+            "type": "java",
+            "name": "LeafSimilarTrees",
+            "request": "launch",
+            "mainClass": "Easy.LeafSimilarTrees",
+            "projectName": "LeetCode_eb4d9012"
+        },
+        {
+            "type": "java",
+            "name": "TreeNode",
+            "request": "launch",
+            "mainClass": "Models.TreeNode",
+            "projectName": "LeetCode_eb4d9012"
+        },
+        {
+            "type": "java",
+            "name": "GuessNumberHigherOrLower",
+            "request": "launch",
+            "mainClass": "Easy.GuessNumberHigherOrLower",
+            "projectName": "LeetCode_7f1a99a7"
+        },
+        {
+            "type": "java",
+            "name": "Dota2Senate",
+            "request": "launch",
+            "mainClass": "Dota2Senate",
+            "projectName": "LeetCode_eb4d9012"
+        },
+        {
+            "type": "java",
+            "name": "DecodeString",
+            "request": "launch",
+            "mainClass": "DecodeString",
+            "projectName": "LeetCode_eb4d9012"
+        },
+        {
+            "type": "java",
+            "name": "Dota2Senate",
+            "request": "launch",
+            "mainClass": "Medium.Dota2Senate",
+            "projectName": "LeetCode_eb4d9012"
+        }
+    ]
+}
