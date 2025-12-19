@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "JumpGame2",
+            "request": "launch",
+            "mainClass": "Array.Medium.JumpGame2",
+            "projectName": "LeetCode_eb4d9012"
+        },
+        {
+            "type": "java",
+            "name": "JumpGame",
+            "request": "launch",
+            "mainClass": "Array.Medium.JumpGame",
+            "projectName": "LeetCode_eb4d9012"
+        },
+        {
+            "type": "java",
+            "name": "RotateArray",
+            "request": "launch",
+            "mainClass": "Array.Medium.RotateArray",
+            "projectName": "LeetCode_eb4d9012"
+        },
+        {
+            "type": "java",
+            "name": "RemoveDuplicatesFromSortedArray2",
+            "request": "launch",
+            "mainClass": "Array.Medium.RemoveDuplicatesFromSortedArray2",
+            "projectName": "LeetCode_eb4d9012"
+        },
+        {
+            "type": "java",
+            "name": "RemoveElement",
+            "request": "launch",
+            "mainClass": "Array.Easy.RemoveElement",
+            "projectName": "LeetCode_eb4d9012"
+        },
+        {
+            "type": "java",
             "name": "StockSpanner",
             "request": "launch",
             "mainClass": "StockSpanner",
