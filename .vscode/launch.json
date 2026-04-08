@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "IntegerToRoman",
+            "request": "launch",
+            "mainClass": "String.Medium.IntegerToRoman",
+            "projectName": "LeetCode_eb4d9012"
+        },
+        {
+            "type": "java",
             "name": "JumpGame2",
             "request": "launch",
             "mainClass": "Array.Medium.JumpGame2",
