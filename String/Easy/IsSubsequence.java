@@ -6,7 +6,7 @@ public class IsSubsequence {
         int i = 0;
 
         if (s.length() > t.length()) {
-            return false;https://leetcode.com/problems/is-subsequence/
+            return false;
         }
 
         if (s.length() == 0) {
