@@ -26,29 +26,42 @@ public class TextJustification {
                 }
                 
             }
-
-            //Now line size just represents the length in words by removing any added space
-            lineSize-= line.size();
-            
-            int numberOfSpaces = line.size() - 1; //number of words - 1
-            numberOfSpaces = numberOfSpaces == 0 ? numberOfSpaces + 1 : numberOfSpaces;
-
-            int whiteSpace = maxWidth - lineSize;
-            int widthPerSpace = whiteSpace / numberOfSpaces;
-            int numberOfLargerSpaces = whiteSpace - (widthPerSpace * numberOfSpaces); // spaces with the size = 1 + widthPerSpace
-
             StringBuilder sb = new StringBuilder();
-            for (int j = 0; j < line.size(); j++) {
-                sb.append(line.get(j));
-                if (j != line.size() - 1) {
-                    int widthOfCurrentSpace = widthPerSpace;
-                    if (numberOfLargerSpaces > 0) {
-                        widthOfCurrentSpace++;
-                        numberOfLargerSpaces--;
+            if (i != words.length ) {
+                lineSize-= line.size();
+                
+                int numberOfSpaces = line.size() - 1; //number of words - 1
+                numberOfSpaces = numberOfSpaces == 0 ? numberOfSpaces + 1 : numberOfSpaces;
+
+                int whiteSpace = maxWidth - lineSize;
+                int widthPerSpace = whiteSpace / numberOfSpaces;
+                int numberOfLargerSpaces = whiteSpace - (widthPerSpace * numberOfSpaces); // spaces with the size = 1 + widthPerSpace
+
+                for (int j = 0; j < line.size(); j++) {
+                    sb.append(line.get(j));
+                    if (whiteSpace != 0) {
+                        int widthOfCurrentSpace = widthPerSpace;
+                        if (numberOfLargerSpaces > 0) {
+                            widthOfCurrentSpace++;
+                            numberOfLargerSpaces--;
+                        }
+                        sb.append(" ".repeat(widthOfCurrentSpace));
+                        whiteSpace-= widthOfCurrentSpace;
                     }
-                    sb.append(" ".repeat(widthOfCurrentSpace));
                 }
+            } else {
+                int lastLineSize = 0;
+                for (int j = 0; j < line.size(); j++) {
+                    sb.append(line.get(j));
+                    lastLineSize+= line.get(j).length();
+                    if (lastLineSize != maxWidth) {
+                        sb.append(" ");
+                        lastLineSize++;
+                    }
+                }
+                sb.append(" ".repeat(maxWidth - lastLineSize));
             }
+
             lines.add(sb.toString());
         }
         return lines;
@@ -57,7 +70,7 @@ public class TextJustification {
 
     public static void main(String[] args) {
         TextJustification s = new TextJustification();
-        String[] words = {"This", "is", "an", "example", "of", "text", "1234567891123456"};
+        String[] words = {"What","must","be","acknowledgment","shall","be"};
         System.out.println(s.fullJustify(words, 16));
     }
 }
