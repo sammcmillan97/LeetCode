@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "TextJustification",
+            "request": "launch",
+            "mainClass": "String.Hard.TextJustification",
+            "projectName": "LeetCode_7f1a99a7"
+        },
+        {
+            "type": "java",
             "name": "IntegerToRoman",
             "request": "launch",
             "mainClass": "String.Medium.IntegerToRoman",
