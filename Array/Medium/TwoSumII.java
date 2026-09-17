@@ -10,7 +10,7 @@ public class TwoSumII {
         while(targetNotFound) {
             int sum = numbers[l] + numbers [r];
             if (sum == target) {
-                targetNotFound = true;
+                targetNotFound = false;
             } else if (sum > target) {
                 r--;
             } else {
@@ -25,7 +25,10 @@ public class TwoSumII {
         int[] numbers = {2,7,11,15};
         int taget = 9;
         TwoSumII s = new TwoSumII();
-        System.out.println(s.twoSum(numbers, taget));
+        int[] result = s.twoSum(numbers, taget);
+        System.out.println(result[0]);
+        System.out.println(result[1]);
+
     }
 
 }
