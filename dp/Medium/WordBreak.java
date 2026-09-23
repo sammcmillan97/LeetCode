@@ -8,48 +8,19 @@ import java.util.Set;
 public class WordBreak {
 
     public boolean wordBreak(String s, List<String> wordDict) {
-        Set<String> cache = new HashSet<>();
-        return wordBreakRecurse(s, wordDict, cache); 
+        return canBreak(s, 0, new HashSet<>(wordDict), new Boolean[s.length()]);
     }
 
-    public boolean wordBreakRecurse(String s, List<String> wordDict, Set<String> cache) {
-        if (s == "") {
-            return true;
-        }
+    private boolean canBreak(String s, int start, Set<String> dict, Boolean[] memo) {
+        if (start == s.length()) return true;
+        if (memo[start] != null) return memo[start];
 
-        for(String word : wordDict) {
-            if(isSubStringMatch(s, word)) {
-                String key = s + "," + word;
-                if (!cache.contains(key)) {
-                    boolean result = wordBreak(s.substring(word.length(), s.length()), wordDict);
-                    if(result) {
-                        return true;
-                    } else {
-                        cache.add(key);
-                    }
-                }
+        for (String word : dict) {
+            if (s.startsWith(word, start) && canBreak(s, start + word.length(), dict, memo)) {
+                return memo[start] = true;
             }
         }
-        return false;
-    }
-
-    public boolean isSubStringMatch(String mainString, String comparisonString) {
-        int i = 0;
-        int j = 0;
-
-        while(i < mainString.length() && j < comparisonString.length()) {
-            if (mainString.charAt(i) != comparisonString.charAt(j)) {
-                return false;
-            }
-            i++;
-            j++;
-        }
-
-        if (j >= comparisonString.length()) {
-            return true;
-        } else {
-            return false;
-        }
+        return memo[start] = false;
     }
 
     public static void main(String[] args) {
