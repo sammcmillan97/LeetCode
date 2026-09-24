@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "SubstringWithConcatenationOfAllWords",
+            "request": "launch",
+            "mainClass": "dp.Hard.SubstringWithConcatenationOfAllWords",
+            "projectName": "LeetCode_eb4d9012"
+        },
+        {
+            "type": "java",
             "name": "TextJustification",
             "request": "launch",
             "mainClass": "String.Hard.TextJustification",
