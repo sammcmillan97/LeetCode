@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "IsomorphicStrings",
+            "request": "launch",
+            "mainClass": "Hashmap.Easy.IsomorphicStrings",
+            "projectName": "LeetCode_eb4d9012"
+        },
+        {
+            "type": "java",
             "name": "SubstringWithConcatenationOfAllWords",
             "request": "launch",
             "mainClass": "dp.Hard.SubstringWithConcatenationOfAllWords",
